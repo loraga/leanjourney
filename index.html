@@ -94,8 +94,12 @@
     }
     .hero::after {
       content: "";
-      position: absolute; inset: auto 0 0 0; height: 140px;
-      background: linear-gradient(180deg, rgba(7,7,7,0), rgba(7,7,7,1));
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse at 78% 82%, rgba(7,7,7,.96) 0%, rgba(7,7,7,.92) 18%, rgba(7,7,7,.72) 34%, rgba(7,7,7,0) 52%),
+        linear-gradient(180deg, rgba(7,7,7,0) 0%, rgba(7,7,7,.18) 62%, rgba(7,7,7,1) 100%);
     }
     .hero-content {
       position: relative; z-index: 1;
